@@ -25,27 +25,6 @@ const Navbar = () => {
               </li>
             );
           })}
-
-          {/* <li>
-            <a className="text-gray font-light text-[18px]" href="#">
-              Services
-            </a>
-          </li>
-          <li>
-            <a className="text-gray font-light text-[18px]" href="#">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a className="text-gray font-light text-[18px]" href="#">
-              References
-            </a>
-          </li>
-          <li>
-            <a className="text-gray font-light text-[18px]" href="#">
-              Contact
-            </a>
-          </li> */}
         </ul>
       </div>
     </nav>
