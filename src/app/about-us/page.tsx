@@ -6,23 +6,24 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      {/* Hero Section */}
-      <section className="container my-[128px]  mx-auto h-[527px] flex items-center ">
+      {/* Top Hero Section */}
+      <section className="container my-[128px]  mx-auto h-[468px] flex items-center ">
         <div className="container relative">
           <div className="w-[552px] py-5 relative z-10">
             <h1 className="text-5xl font-bold text-gray mb-4 leading-normal">
               Who are we? <br /> We are
               <span className="text-primary"> Abersoft.</span>
             </h1>
-            <p className="text-gray text-2xl">
+            <p className="text-gray text-2xl leading-normal">
               We have been working with software development since 2013 and our
               team has created apps with over 400 million users.
             </p>
           </div>
-          <div className="z-0 absolute bottom-[-30px] right-[-45%] w-full bg-[url('/img/hero/Team_Hero.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[527px]"></div>
+          <div className="z-0 absolute bottom-[-12%] right-[-40%] w-full bg-[url('/img/hero/Team_Hero.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[468px]"></div>
         </div>
       </section>
 
+      {/* Quote Section  */}
       <section className="flex flex-col gap-[33px] justify-center items-center h-[640px] bg-primary">
         <StartQuoteIcon />
         <h1 className="text-white text-5xl font-bold leading-normal text-center">
@@ -31,6 +32,7 @@ const AboutUs = () => {
         <EndQuoteIcon />
       </section>
 
+      {/* Philosophy Section */}
       <section className=" container mx-auto flex flex-col gap-[33px] justify-center items-start  h-[640px] relative">
         <div className="w-[552px] flex flex-col gap-[19px] relative z-10">
           <h4 className="text-primary text-[32px] font-bold">
@@ -58,12 +60,14 @@ const AboutUs = () => {
         <div className="z-0 absolute bottom-0 right-0 w-full bg-[url('/img/hero/victory_hand_bg.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[527px]"></div>
       </section>
 
+      {/* Quote Section  */}
       <section className="flex flex-col gap-[33px] justify-center items-center h-[640px] bg-primary">
         <h1 className="text-white text-5xl font-bold leading-normal text-center">
           Abersoft <br /> more than just a <br /> software house.
         </h1>
       </section>
 
+      {/* Info Section  */}
       <section className="container my-[124px]  mx-auto flex ">
         <div className="container relative">
           <div className="w-[498px] py-5 relative z-10">
@@ -90,6 +94,7 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* Contact Us Section */}
       <ContactUs />
     </>
   );

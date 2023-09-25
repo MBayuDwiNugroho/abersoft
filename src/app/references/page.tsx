@@ -7,7 +7,8 @@ import React from "react";
 const References: NextPage = () => {
   return (
     <>
-      <section className="container my-16  mx-auto h-[527px] flex items-center ">
+      {/* Top Hero Section */}
+      <section className="container my-20  mx-auto h-[527px] flex items-center ">
         <div className="container relative">
           <div className="w-[552px] py-5 relative z-10">
             <h1 className="text-5xl font-bold text-primary mb-4 leading-normal">
@@ -22,11 +23,11 @@ const References: NextPage = () => {
           <div className="absolute z-0 top-[-50%] left-[32%] w-full bg-[url('/img/hero/food_desktop.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[527px]"></div>
         </div>
       </section>
-
-      <section className="container my-16  mx-auto flex ">
+      {/* Second Hero Section */}
+      <section className="container my-16 h-[527px]  mx-auto flex ">
         <div className="container flex justify-end relative">
-          <div className="absolute z-0 top-0 left-0 w-full bg-[url('/img/hero/Image_Phone_Feastly.png')] bg-[0%_30%] bg-no-repeat bg-[Length:50%] h-[527px]"></div>
-          <div className="w-[498px] py-5 relative z-10">
+          <div className="absolute z-0 top-0 left-0 w-full bg-[url('/img/hero/Image_Phone_Feastly.png')] bg-[0%_0%] bg-no-repeat bg-[Length:50%] h-[527px]"></div>
+          <div className="w-[498px] relative z-10">
             <h4 className="text-primary text-[32px] font-bold mb-[28px]">
               Built with Flutter.
             </h4>
@@ -51,6 +52,7 @@ const References: NextPage = () => {
         </div>
       </section>
 
+      {/* Quote Section  */}
       <section className="flex flex-col gap-[33px] justify-center items-center h-[640px] bg-primary">
         <div className="container">
           <h1 className="text-white text-5xl font-bold leading-normal text-left">
@@ -60,6 +62,7 @@ const References: NextPage = () => {
         </div>
       </section>
 
+      {/* Client Product Section */}
       <section className="container my-16 mt-[165px]  mx-auto h-[527px] flex">
         <div className="container relative">
           <div className="w-[490px] relative z-10">
@@ -89,6 +92,7 @@ const References: NextPage = () => {
         </div>
       </section>
 
+      {/* Client Product Section */}
       <section className="container my-16 h-[587px]  mx-auto flex ">
         <div className="container flex justify-end items-baseline relative">
           <div className="absolute z-0 top-0 left-0 w-full bg-[url('/img/hero/two_phone.png')] bg-[0%_0%] bg-no-repeat bg-[Length:50%] h-[587px]"></div>
@@ -118,38 +122,47 @@ const References: NextPage = () => {
         </div>
       </section>
 
-      <section className=" mt-16  mx-auto h-[527px] flex bg-[#333]">
+      {/* Client Product Section */}
+      <section className=" mt-16  mx-auto h-[610px] flex bg-[#333]">
         <div className="container mt-[204px] mx-auto relative">
           <div className="w-[610px] relative z-10">
-            <h4 className="text-white text-5xl font-bold">
+            <h4 className="text-white text-5xl font-bold leading-normal">
               We are also proud to have many influencers and celebrities as
               clients.
             </h4>
           </div>
-          <div className="absolute z-0 top-[-70%] left-[43%] w-full bg-[url('/img/hero/macbook.png')] bg-[105%_100%] bg-no-repeat bg-contain h-[610px]"></div>
+          <div className="absolute z-0 bottom-[-30%] left-[35%] w-full bg-[url('/img/hero/macbook.png')] bg-[0%_100%] bg-no-repeat bg-[length:117%] h-[810px]"></div>
         </div>
       </section>
+
+      {/* Client Product Section */}
       <section className="bg-[#333] mb-16 h-[708px] flex">
         <div className="container mx-auto flex justify-end relative">
           <div className="absolute z-0 top-0 left-[-27%] w-full bg-[url('/img/hero/Iphone_Patrik_Kittel.png')] bg-[0%_0%] bg-no-repeat bg-[length:90%]  h-[614px]"></div>
           <div className="w-[498px] py-5 relative z-10 mt-[127px]">
             <h4 className="text-white text-[32px] font-bold mb-[28px]">
-            Patrik Kittel
+              Patrik Kittel
             </h4>
             <p className="text-white text-base font-medium">
-            Patrik Kittel is one of the best horse riders in the world, when he came to us with the wish to create a luxurious website and app for his fans we were happy to help him.
+              Patrik Kittel is one of the best horse riders in the world, when
+              he came to us with the wish to create a luxurious website and app
+              for his fans we were happy to help him.
               <br />
               <br />
-              We completely rebuilt his website from scratch creating a dashboard that made it easy and pain free to keep his website up to date.
+              We completely rebuilt his website from scratch creating a
+              dashboard that made it easy and pain free to keep his website up
+              to date.
               <br />
               <br />
-              We also created an App for Patrik so that his fans always can follow him when he is out on his competitions and shows.
+              We also created an App for Patrik so that his fans always can
+              follow him when he is out on his competitions and shows.
             </p>
           </div>
         </div>
       </section>
 
-      <ContactUs/>
+      {/* Contact Us Section */}
+      <ContactUs />
     </>
   );
 };

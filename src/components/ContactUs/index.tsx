@@ -5,7 +5,7 @@ import LinkenIcon from "../Icons/linken";
 
 const ContactUs = () => {
   return (
-    <section className="pb-9 pt-[99px]">
+    <section className="pb-9 pt-28">
       <div className="container mx-auto flex gap-24 items-stretch">
         <div className="w-1/2 flex flex-col">
           <h1 className="text-primary text-5xl font-bold">Contact us.</h1>
@@ -23,18 +23,18 @@ const ContactUs = () => {
           <input
             type="text"
             placeholder="Name"
-            className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray"
+            className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray placeholder:font-medium"
           />
           <input
             type="text"
             placeholder="Email"
-            className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray"
+            className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray placeholder:font-medium"
           />
           <textarea
             placeholder="Message"
-            className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray h-[205px]"
+            className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray placeholder:font-medium h-[205px]"
           />
-          <button className="bg-primary font-normal text-white rounded-[29px] w-[200px] text-center py-4 ml-auto text-2xl">
+          <button className="bg-primary font-normal text-white rounded-[29px] w-[200px] text-center py-4 ml-auto leading-7 text-2xl">
             Send
           </button>
         </div>

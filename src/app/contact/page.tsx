@@ -5,6 +5,7 @@ import React from "react";
 const Contact: NextPage = () => {
   return (
     <>
+      {/* Top Hero Section */}
       <section className="container my-[128px]  mx-auto h-[527px] flex items-center ">
         <div className="container relative">
           <div className="w-[552px] relative z-10">
@@ -20,6 +21,7 @@ const Contact: NextPage = () => {
         </div>
       </section>
 
+      {/* Contact Us Section */}
       <ContactUs />
     </>
   );

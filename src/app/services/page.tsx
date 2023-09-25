@@ -6,8 +6,8 @@ import React from "react";
 const Services: NextPage = () => {
   return (
     <>
-      {/* Hero Section */}
-      <section className="container my-16  mx-auto h-[527px] flex items-center ">
+      {/* Top Hero Section */}
+      <section className="container my-20  mx-auto h-[527px] flex items-center ">
         <div className="container relative">
           <div className="w-[552px] py-5 relative z-10">
             <h1 className="text-5xl font-bold text-primary mb-4 leading-normal">
@@ -19,11 +19,11 @@ const Services: NextPage = () => {
               we will create the solution you need.
             </p>
           </div>
-          <div className="absolute z-0 top-[-108px] left-[10%] w-full bg-[url('/img/hero/services_hero.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[527px]"></div>
+          <div className="absolute z-0 top-[-53%] left-[6%] w-full bg-[url('/img/hero/services_hero.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[623px]"></div>
         </div>
       </section>
 
-      {/* Product/Service Section */}
+      {/* Service Experience Section */}
       <section className="py-[99px]">
         <div className="container mx-auto grid grid-cols-2 gap-x-[61px] gap-y-[89px]">
           {abersoftServices.map((item: any, index: number) => (
