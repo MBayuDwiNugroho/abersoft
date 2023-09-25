@@ -1,3 +1,4 @@
+import ContactUs from "@/components/ContactUs";
 import AppStore from "@/components/Icons/appStore";
 import GooglePlay from "@/components/Icons/googlePlay";
 import { NextPage } from "next";
@@ -111,11 +112,44 @@ const References: NextPage = () => {
               <br />
               <br />
               We used a really user friendly CMS that does not require the
-              client to go into the code to update content within the app.  
+              client to go into the code to update content within the app.
             </p>
           </div>
         </div>
       </section>
+
+      <section className=" mt-16  mx-auto h-[527px] flex bg-[#333]">
+        <div className="container mt-[204px] mx-auto relative">
+          <div className="w-[610px] relative z-10">
+            <h4 className="text-white text-5xl font-bold">
+              We are also proud to have many influencers and celebrities as
+              clients.
+            </h4>
+          </div>
+          <div className="absolute z-0 top-[-70%] left-[43%] w-full bg-[url('/img/hero/macbook.png')] bg-[105%_100%] bg-no-repeat bg-contain h-[610px]"></div>
+        </div>
+      </section>
+      <section className="bg-[#333] mb-16 h-[708px] flex">
+        <div className="container mx-auto flex justify-end relative">
+          <div className="absolute z-0 top-0 left-[-27%] w-full bg-[url('/img/hero/Iphone_Patrik_Kittel.png')] bg-[0%_0%] bg-no-repeat bg-[length:90%]  h-[614px]"></div>
+          <div className="w-[498px] py-5 relative z-10 mt-[127px]">
+            <h4 className="text-white text-[32px] font-bold mb-[28px]">
+            Patrik Kittel
+            </h4>
+            <p className="text-white text-base font-medium">
+            Patrik Kittel is one of the best horse riders in the world, when he came to us with the wish to create a luxurious website and app for his fans we were happy to help him.
+              <br />
+              <br />
+              We completely rebuilt his website from scratch creating a dashboard that made it easy and pain free to keep his website up to date.
+              <br />
+              <br />
+              We also created an App for Patrik so that his fans always can follow him when he is out on his competitions and shows.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <ContactUs/>
     </>
   );
 };

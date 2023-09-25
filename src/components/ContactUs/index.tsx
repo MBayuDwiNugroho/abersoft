@@ -31,7 +31,7 @@ const ContactUs = () => {
             className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray"
           />
           <textarea
-            placeholder="Email"
+            placeholder="Message"
             className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray h-[205px]"
           />
           <button className="bg-primary font-normal text-white rounded-[29px] w-[200px] text-center py-4 ml-auto text-2xl">

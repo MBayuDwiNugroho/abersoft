@@ -1,5 +1,6 @@
 import React from "react";
 import AbersoftIcon from "../Icons/abersoft";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -22,12 +23,12 @@ const Footer = () => {
         </div>
         <div className="w-1/2 flex flex-col gap-[19px]">
           <h5 className="text-lg font-bold">Documents</h5>
-          <a href="#" className="text-normal font-medium">
+          <Link href="/term-condition" className="text-normal font-medium">
             Terms & Conditions
-          </a>
-          <a href="#" className="text-normal font-medium">
+          </Link>
+          <Link href="/privacy-policy" className="text-normal font-medium">
             Privacy Policy
-          </a>
+          </Link>
         </div>
         <div className="w-1/2 flex flex-col gap-[19px]">
           <h5 className="text-lg font-bold">Inhouse</h5>
