@@ -1,7 +1,3 @@
-import AbersoftIcon from "@/components/Icons/abersoft";
-import DiscordIcon from "@/components/Icons/discord";
-import FacebookIcon from "@/components/Icons/facebook";
-import LinkenIcon from "@/components/Icons/linken";
 import Image from "next/image";
 import { abersoftServicesHome } from "@/data/constants";
 import { NextPage } from "next";
@@ -10,7 +6,8 @@ import ContactUs from "@/components/ContactUs";
 const Home: NextPage = () => {
   return (
     <>
-      {/* Hero Section */}
+
+      {/* Top Hero Section */}
       <section className="container my-20  mx-auto h-[527px] flex items-center ">
         <div className="container relative">
           <div className="w-[552px] py-5 relative z-10">

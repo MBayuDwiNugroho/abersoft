@@ -21,11 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-         {/* Navigation */}
+      <body className={`${poppins.className}`}>
+        {/* Navigation */}
         <Navbar />
-        <main className="overflow-hidden">{children}</main>
-        <Footer/>
+        <main className="overflow-hidden p-8">{children}</main>
+        <Footer />
       </body>
     </html>
   );

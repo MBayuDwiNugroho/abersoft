@@ -6,7 +6,7 @@ import LinkenIcon from "../Icons/linken";
 const ContactUs = () => {
   return (
     <section className="pb-9 pt-28">
-      <div className="container mx-auto flex gap-24 items-stretch">
+      <div className="container mx-auto flex gap-24 items-stretch flex-col md:flex-row">
         <div className="w-1/2 flex flex-col">
           <h1 className="text-primary text-5xl font-bold">Contact us.</h1>
           <p className="text-gray text-base mt-14">
