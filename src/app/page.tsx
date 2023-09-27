@@ -24,8 +24,8 @@ const Home: NextPage = () => {
       </section>
 
       {/* Product/Service Section */}
-      <section className="container md:py-20">
-        <div className="mx-auto grid grid-cols-1 justify-between gap-[28px] md:gap-[57px] md:grid-cols-3 ">
+      <section className="container mx-auto md:py-20">
+        <div className="grid grid-cols-1 justify-between gap-[28px] md:grid-cols-3 md:gap-[57px] ">
           {abersoftServicesHome.map((item: any, index: number) => (
             <div
               key={index}
