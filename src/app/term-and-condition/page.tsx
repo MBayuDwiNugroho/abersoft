@@ -5,7 +5,7 @@ const TermAndCondition = () => {
     <>
       <div className="container mx-auto py-[156px]">
         <h1 className="text-primary font-bold text-2xl mb-[19px]">
-          Privacy Policy
+          Terms & Conditions
         </h1>
         <p className="text-base font-medium leading-normal text-gray">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maecenas

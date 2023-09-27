@@ -19,7 +19,6 @@ const Navbar = () => {
   return (
     <nav className="p-8">
       <div className="container mx-auto">
-
         {/* navigation for desktop */}
         <ul className={`hidden md:flex justify-between space-x-4 ${open}`}>
           {menuItems.map((item, index) => {
@@ -39,7 +38,7 @@ const Navbar = () => {
             );
           })}
         </ul>
-        
+
         {/* navigation for mobile  */}
         <ul
           className={`h-screen bg-white z-50 p-8 w-screen fixed top-0 flex flex-col md:hidden gap-8 transition-all duration-500 ease-in-out ${

@@ -5,39 +5,42 @@ import LinkenIcon from "../Icons/linken";
 
 const ContactUs = () => {
   return (
-    <section className="pb-9 pt-28">
-      <div className="container mx-auto flex gap-24 items-stretch flex-col md:flex-row">
-        <div className="w-1/2 flex flex-col">
-          <h1 className="text-primary text-5xl font-bold">Contact us.</h1>
-          <p className="text-gray text-base mt-14">
+    <section className="pb-9 pt-[74px] md:pt-28">
+      <div className="container mx-auto flex flex-col md:flex-row flex-wrap items-stretch gap-12 md:gap-0 ">
+        <div className="flex w-full md:w-1/2 flex-col">
+          <h1 className="text-[28px] font-bold text-primary md:text-5xl">
+            Contact us.
+          </h1>
+          <p className="mt-[19px] md:mt-14 text-sm text-gray md:text-base md:pr-24">
             We know that it sometimes can be hard to know where to start. Let’s
             chat and see if we can help you!
           </p>
-          <div className="flex gap-[67px] mt-auto mb-[100px]">
-            <FacebookIcon />
-            <DiscordIcon />
-            <LinkenIcon />
-          </div>
         </div>
-        <div className="flex flex-col gap-9 w-1/2">
+        <div className="flex w-full md:w-1/2 flex-col gap-9 items-center md:items-end">
           <input
             type="text"
             placeholder="Name"
-            className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray placeholder:font-medium"
+            className="w-full rounded-[29px] bg-[#F6F6F9] px-[33px] py-[17px] text-gray placeholder:font-medium placeholder:text-gray"
           />
           <input
             type="text"
             placeholder="Email"
-            className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray placeholder:font-medium"
+            className="w-full rounded-[29px] bg-[#F6F6F9] px-[33px] py-[17px] text-gray placeholder:font-medium placeholder:text-gray"
           />
           <textarea
             placeholder="Message"
-            className="bg-[#F6F6F9] w-full px-[33px] py-[17px] rounded-[29px] text-gray placeholder:text-gray placeholder:font-medium h-[205px]"
+            className="h-[205px] w-full rounded-[29px] bg-[#F6F6F9] px-[33px] py-[17px] text-gray placeholder:font-medium placeholder:text-gray"
           />
-          <button className="bg-primary font-normal text-white rounded-[29px] w-[200px] text-center py-4 ml-auto leading-7 text-2xl">
+          <button className="w-[200px] rounded-[29px] bg-primary py-4 text-center text-2xl font-normal leading-7 text-white">
             Send
           </button>
         </div>
+        <div className="mb-[100px] w-full md:w-1/2 justify-between md:justify-start mt-auto flex gap-[67px] md:mt-[-55px]">
+            <FacebookIcon />
+            <DiscordIcon />
+            <LinkenIcon />
+          </div>
+
       </div>
     </section>
   );

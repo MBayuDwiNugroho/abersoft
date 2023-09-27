@@ -6,36 +6,35 @@ import ContactUs from "@/components/ContactUs";
 const Home: NextPage = () => {
   return (
     <>
-
       {/* Top Hero Section */}
-      <section className="container my-20  mx-auto h-[527px] flex items-center ">
-        <div className="container relative">
-          <div className="w-[552px] py-5 relative z-10">
-            <h1 className="text-5xl font-bold text-primary mb-4 leading-normal">
+      <section className="container mx-auto  flex h-full items-center md:my-20 md:h-[527px] ">
+        <div className="container relative flex flex-col md:flex-row">
+          <div className="z-10 order-2 w-full py-5 md:relative md:w-[552px]">
+            <h1 className="mb-4 text-[28px] font-bold leading-normal text-primary md:text-5xl">
               We help you build the tech solutions of the future.
             </h1>
-            <p className="text-gray text-2xl leading-normal">
+            <p className=" text-lg leading-normal text-gray md:text-2xl">
               When you need help with development or design we are here to
               create the best solutions for you. With over a decade of
               experience in software development.
             </p>
           </div>
-          <div className="absolute z-0 top-[-20px] left-[11%] w-full bg-[url('/img/hero/Image_Phonbe.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[527px]"></div>
+          <div className="left-[11%] top-[-20px] z-0 order-1 h-[246px] w-full bg-[url('/img/hero/Image_Phonbe.png')] bg-contain bg-[100%_100%] bg-no-repeat md:absolute md:order-2 md:h-[527px]"></div>
         </div>
       </section>
 
       {/* Product/Service Section */}
-      <section className="py-20">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 justify-between gap-[57px] ">
+      <section className="container md:py-20">
+        <div className="mx-auto grid grid-cols-1 justify-between gap-[28px] md:gap-[57px] md:grid-cols-3 ">
           {abersoftServicesHome.map((item: any, index: number) => (
             <div
               key={index}
-              className={`flex flex-col gap-[19px] w-[332px] ${
+              className={`flex w-[332px] flex-col gap-[19px] ${
                 index % 3 === 0
-                  ? "justify-self-start"
+                  ? "md:justify-self-start"
                   : index % 3 === 1
-                  ? "justify-self-center"
-                  : "justify-self-end"
+                  ? "md:justify-self-center"
+                  : "md:justify-self-end"
               }`}
             >
               <Image
@@ -44,10 +43,10 @@ const Home: NextPage = () => {
                 src={`/img/${item.icon}.png`}
                 alt=""
               />
-              <h4 className="text-primary text-[32px] font-bold">
+              <h4 className="text-2xl font-bold text-primary md:text-[32px]">
                 {item.title}
               </h4>
-              <p className="text-gray text-base font-medium">
+              <p className="text-sm font-medium text-gray md:text-base">
                 {item.description}
               </p>
             </div>

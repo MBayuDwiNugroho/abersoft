@@ -1,11 +1,11 @@
 import React from "react";
 
 interface HamburgerMenuIconProps {
-    className? : string;
-    onClick? : any
+  className?: string;
+  onClick?: any;
 }
 
-const HamburgerMenuIcon = ({className, onClick}:HamburgerMenuIconProps) => {
+const HamburgerMenuIcon = ({ className, onClick }: HamburgerMenuIconProps) => {
   return (
     <svg
       width="32"
