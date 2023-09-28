@@ -6,7 +6,7 @@ export const menuItems = [
   { path: "/contact", name: "Contact" },
 ];
 
-export const abersoftServicesHome = [
+export const abersoftServices = [
   {
     icon: "app-icon",
     title: "App Development",
@@ -45,7 +45,7 @@ export const abersoftServicesHome = [
   },
 ];
 
-export const abersoftServices = [
+export const abersoftExperiences = [
   {
     title: "App Development",
     subttile:

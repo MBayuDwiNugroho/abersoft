@@ -1,48 +1,55 @@
-import ContactUs from "@/components/ContactUs";
+import ContactUsSection from "@/components/ContactUsSection";
 import EndQuoteIcon from "@/components/Icons/endQuote";
 import StartQuoteIcon from "@/components/Icons/startQuote";
+import QuoteSection from "@/components/QuoteSection";
+import TopBannerSection from "@/components/TopBannerSection";
+import TopicSection from "@/components/TopicSection";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Us",
+};
 
 const AboutUs = () => {
   return (
     <>
-      {/* Top Hero Section */}
-      <section className="container my-[128px]  mx-auto h-[468px] flex items-center ">
-        <div className="container relative">
-          <div className="w-[552px] py-5 relative z-10">
-            <h1 className="text-5xl font-bold text-gray mb-4 leading-normal">
-              Who are we? <br /> We are
-              <span className="text-primary"> Abersoft.</span>
+      <TopBannerSection
+        heightClass="h-[468px] "
+        text={
+          <span className="text-gray">
+            Who are we? <br /> We are
+            <span className="text-primary"> Abersoft.</span>
+          </span>
+        }
+        description="We have been working with software development since 2013 and our
+        team has created apps with over 400 million users."
+        image={"bg-[url('/img/hero/Team_Hero.png')]"}
+        imageClass={
+          "bottom-[-12%] right-[-40%]  bg-cover md:bg-contain  bg-[-3%_-35%] bg-[0%_100%]   md:bg-[100%_100%]  h-[290px] md:!h-[468px]"
+        }
+      />
+
+      <QuoteSection
+        text={
+          <>
+            <StartQuoteIcon />
+            <h1 className="text-center text-[28px] font-bold leading-normal text-white md:text-5xl">
+              Creating software <br /> is not our work, <br /> it is our
+              passion.
             </h1>
-            <p className="text-gray text-2xl leading-normal">
-              We have been working with software development since 2013 and our
-              team has created apps with over 400 million users.
-            </p>
-          </div>
-          <div className="z-0 absolute bottom-[-12%] right-[-40%] w-full bg-[url('/img/hero/Team_Hero.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[468px]"></div>
-        </div>
-      </section>
+            <EndQuoteIcon />
+          </>
+        }
+      />
 
-      {/* Quote Section  */}
-      <section className="flex flex-col gap-[33px] justify-center items-center h-[640px] bg-primary">
-        <StartQuoteIcon />
-        <h1 className="text-white text-5xl font-bold leading-normal text-center">
-          Creating software <br /> is not our work, <br /> it is our passion.
-        </h1>
-        <EndQuoteIcon />
-      </section>
-
-      {/* Philosophy Section */}
-      <section className=" container mx-auto flex flex-col gap-[33px] justify-center items-start  h-[640px] relative">
-        <div className="w-[552px] flex flex-col gap-[19px] relative z-10">
-          <h4 className="text-primary text-[32px] font-bold">
-            Our philosophy.
-          </h4>
-          <p className="text-gray text-base font-bold">
-            Our mission is to make our clients life as smooth and problem free
-            as possible and deliver top products.
-          </p>
-          <p className="text-gray text-base font-medium">
+      <TopicSection
+        title={"Our philosophy."}
+        subtitle={
+          "Our mission is to make our clients life as smooth and problem free as possible and deliver top products."
+        }
+        description={
+          <>
             We have been in the tech industry over a decade and know that it can
             sometimes be a jungle for someone who is unfamilliar with it. We are
             here to assist you and make it fun and easy for you to work.
@@ -55,47 +62,48 @@ const AboutUs = () => {
             <br />
             2019 we won the Innovation & Entrepreneurship Award in Kunming for
             our work.
-          </p>
-        </div>
-        <div className="z-0 absolute bottom-0 right-0 w-full bg-[url('/img/hero/victory_hand_bg.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[527px]"></div>
-      </section>
+          </>
+        }
+        image={"bg-[url('/img/hero/victory_hand_bg.png')]"}
+        imageClass={
+          "bottom-0 right-0 bg-contain bg-[50%_100%]  lg:bg-[100%_100%]"
+        }
+      />
 
-      {/* Quote Section  */}
-      <section className="flex flex-col gap-[33px] justify-center items-center h-[640px] bg-primary">
-        <h1 className="text-white text-5xl font-bold leading-normal text-center">
-          Abersoft <br /> more than just a <br /> software house.
-        </h1>
-      </section>
+      <QuoteSection
+        text={
+          <h1 className="text-center text-[28px] font-bold leading-normal text-white md:text-5xl">
+            Abersoft <br /> more than just a <br /> software house.
+          </h1>
+        }
+      />
 
-      {/* Info Section  */}
-      <section className="container my-[124px]  mx-auto flex ">
-        <div className="container relative">
-          <div className="w-[498px] py-5 relative z-10">
-            <h4 className="text-primary text-[32px] font-bold mb-[28px]">
-              Game Studio & Inhouse Apps.
-            </h4>
-            <p className="text-gray text-base font-medium">
-              Besides helping companies and start ups to create <br /> awesome
-              apps and websites we also have our own inhouse <br /> branch where
-              we explore new technologies that we find <br /> interesting.
-              <br />
-              <br />
-              Lately we have been focusing on exploring the field of Augmented
-              Reality, more commonly known as AR. Besides AR we also love
-              building software that makes life easier for our users
-              <br />
-              <br />
-              Are you looking for a tech partner for your idea, we sometimes go
-              in as part owners in ideas we feel passionate about. Contact us if
-              you have an idea that you think we might be interested in.
-            </p>
-          </div>
-          <div className="z-0 absolute bottom-[-20px] left-[15%]  w-full bg-[url('/img/hero/Image_Abersoft_Studios.png')] bg-[length:50%] bg-[100%_100%] bg-no-repeat h-[527px]"></div>
-        </div>
-      </section>
-
-      {/* Contact Us Section */}
-      <ContactUs />
+      <TopicSection
+        title={"Game Studio & Inhouse Apps."}
+        titleClass="order-2 md:order-1 "
+        description={
+          <>
+            Besides helping companies and start ups to create <br /> awesome
+            apps and websites we also have our own inhouse <br /> branch where
+            we explore new technologies that we find <br /> interesting.
+            <br />
+            <br />
+            Lately we have been focusing on exploring the field of Augmented
+            Reality, more commonly known as AR. Besides AR we also love building
+            software that makes life easier for our users
+            <br />
+            <br />
+            Are you looking for a tech partner for your idea, we sometimes go in
+            as part owners in ideas we feel passionate about. Contact us if you
+            have an idea that you think we might be interested in.
+          </>
+        }
+        image={"bg-[url('/img/hero/Image_Abersoft_Studios.png')]"}
+        imageClass={
+          "order-1 md:order-2 bottom-[-20px] left-[15%]  h-[527px] w-full bg-cover lg:bg-[length:45%] bg-[0%_100%] md:bg-[90%_10%]"
+        }
+      />
+      <ContactUsSection />
     </>
   );
 };

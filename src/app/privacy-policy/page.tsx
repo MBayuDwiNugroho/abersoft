@@ -1,10 +1,16 @@
+import ContactUsSection from "@/components/ContactUsSection";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+};
 
 const TermAndCondition = () => {
   return (
     <>
-      <div className="container mx-auto py-[156px]">
-        <h1 className="text-primary font-bold text-2xl mb-[19px]">
+      <div className="container mx-auto px-8 py-[27px] lg:px-0 lg:py-[156px]">
+        <h1 className="mb-[19px] text-2xl font-bold text-primary">
           Privacy Policy
         </h1>
         <p className="text-base font-medium leading-normal text-gray">
@@ -130,6 +136,9 @@ const TermAndCondition = () => {
           <br />
           <br />
         </p>
+      </div>
+      <div className="md:hidden">
+        <ContactUsSection />
       </div>
     </>
   );

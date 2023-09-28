@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary py-[52px] text-white">
-      <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-start gap-[62px] md:gap-0">
-        <div className="w-full md:w-1/2 items-center md:items-start flex flex-col gap-[19px]">
+    <footer className="bg-primary px-8 py-[52px] text-white lg:px-0">
+      <div className="container mx-auto flex flex-col justify-center gap-[62px] md:flex-row md:justify-start md:gap-0">
+        <div className="flex w-full flex-col items-center gap-[19px] md:w-1/2 md:items-start">
           <h5 className="text-lg font-bold">Our Services</h5>
           <a href="#" className="text-normal font-medium">
             App Development
@@ -21,16 +21,16 @@ const Footer = () => {
             Ongoing Consultation
           </a>
         </div>
-        <div className="w-full md:w-1/2 items-center md:items-start flex flex-col gap-[19px]">
+        <div className="flex w-full flex-col items-center gap-[19px] md:w-1/2 md:items-start">
           <h5 className="text-lg font-bold">Documents</h5>
-          <Link href="/term-condition" className="text-normal font-medium">
+          <Link href="/term-and-condition" className="text-normal font-medium">
             Terms & Conditions
           </Link>
           <Link href="/privacy-policy" className="text-normal font-medium">
             Privacy Policy
           </Link>
         </div>
-        <div className="w-full md:w-1/2 items-center md:items-start flex flex-col gap-[19px]">
+        <div className="flex w-full flex-col items-center gap-[19px] md:w-1/2 md:items-start">
           <h5 className="text-lg font-bold">Inhouse</h5>
           <a href="#" className="text-normal font-medium">
             Haunted House AR
@@ -42,17 +42,17 @@ const Footer = () => {
             Ongoing Consultation
           </a>
         </div>
-        <div className="w-full md:w-1/2 items-center flex flex-col gap-[19px] align-bottom text-right md:items-end">
+        <div className="flex w-full flex-col items-center gap-[19px] text-right align-bottom md:w-1/2 md:items-end">
           <h5 className="text-lg font-bold">Address</h5>
-          <p className="text-normal font-medium text-center md:text-right">
+          <p className="text-normal text-center font-medium md:text-right">
             Kometvägen 3 <br /> 183 33 TÄBY Stockholm, Sweden
           </p>
-          <p className="text-normal font-medium text-center md:text-right">
+          <p className="text-normal text-center font-medium md:text-right">
             Kampung Yadika Regency <br />
             Blok H Nomer 4 Pasuruan, Indonesia
           </p>
 
-          <div className="mt-[19px]">
+          <div className="my-16 md:mb-0 md:mt-[19px]">
             <AbersoftIcon />
           </div>
         </div>

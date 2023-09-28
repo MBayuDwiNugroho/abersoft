@@ -1,28 +1,25 @@
-import ContactUs from "@/components/ContactUs";
-import { NextPage } from "next";
+import ContactUsSection from "@/components/ContactUsSection";
+import TopBannerSection from "@/components/TopBannerSection";
+import { Metadata, NextPage } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 const Contact: NextPage = () => {
   return (
     <>
-      {/* Top Hero Section */}
-      <section className="container my-[128px]  mx-auto h-[527px] flex items-center ">
-        <div className="container relative">
-          <div className="w-[552px] relative z-10">
-            <h1 className="text-5xl py-5 font-bold text-primary mb-4 leading-normal">
-              Become part of our great team.
-            </h1>
-            <p className="text-gray text-2xl">
-              We are always looking for new great talents, if you want to be
-              part of a growing team that have fun work.
-            </p>
-          </div>
-          <div className="z-0 absolute top-[-20%] right-[-22%] w-full bg-[url('/img/hero/hero_desktop.png')] bg-[100%_100%] bg-no-repeat bg-contain h-[527px]"></div>
-        </div>
-      </section>
-
-      {/* Contact Us Section */}
-      <ContactUs />
+      <TopBannerSection
+        text={"Become part of our great team."}
+        description=" We are always looking for new great talents, if you want to be
+        part of a growing team that have fun work."
+        image={"bg-[url('/img/hero/hero_desktop.png')]"}
+        imageClass={
+          "right-[-22%] top-[-20%] bg-[0%_100%] md:bg-[100%_100%] h-[448px] md:h-[527px] bg-cover md:bg-contain"
+        }
+      />
+      <ContactUsSection />
     </>
   );
 };
